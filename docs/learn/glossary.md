@@ -1,6 +1,6 @@
 # Glossary
 
-Use this glossary to learn about terms specific to the Terra Protocol.
+This glossary provides definitions of terms specific to the Terra Protocol.
 
 ## Active set
 
@@ -8,7 +8,7 @@ The top 130 [validators](#validator) that participate in consensus, receive rewa
 
 ## Blockchain
 
-An unchangeable ledger of transactions copied among a network of independent computer systems.
+An immutable ledger of transactions copied among a network of independent computer systems.
 
 ## Blocks
 
@@ -60,17 +60,13 @@ A user who [delegates](#delegate), bonds, or stakes [Luna](#luna) to a [validato
 
 ## Fees
 
-- **Gas**: Compute fees added on to all transactions to avoid spamming. [Validators](#validator) set minimum gas prices and reject transactions that have implied gas prices below this threshold.
+- **Gas**: Compute fees added on to all transactions to avoid spamming. [Validators](#validator) set minimum gas prices and reject transactions that have applied gas prices below this threshold.
 
 For more information on fees, visit [Fees on Terra](fees.md).
 
 ## Full node
 
 A computer connected to the [Terra mainnet](#terra-mainnet) that is able to validate transactions and interact with the Terra blockchain. All active [validators](#validator) run full nodes.
-
-## Luna
-
-The native staking token of the Terra protocol. Luna is also used as a governance token. [Delegators](#delegator) can stake Luna to receive rewards.
 
 ## Governance
 
@@ -90,7 +86,11 @@ Inter-Blockchain Communication. The technology that enables different [blockchai
 
 ## Jailed
 
-Validators who misbehave are jailed or excluded from the [active set](#active-set) for a period amount of time.
+Validators who misbehave are jailed or excluded from the [active set](#active-set) for a period of time.
+
+## Luna
+
+The native staking token of the Terra protocol. Luna is also used as a governance token. [Delegators](#delegator) can stake Luna to receive rewards.
 
 ## Miss
 
@@ -110,7 +110,7 @@ Groups of tokens. Supply pools represent the total supply of tokens in a market.
 
 ## Proof of Stake
 
-Proof of Stake. A style of blockchain where validators are chosen to propose blocks according to the number of coins they hold.
+A blockchain consensus mechanism where validators are chosen to confirm blocks at a rate proportional to the number of tokens they hold.
 
 ## Quorum
 
@@ -126,7 +126,7 @@ Revenue generated from fees given to validators and disbursed to delegators.
 
 ## Self-delegation
 
-The amount of Luna a validator bonds to themselves. Also referred to as self-bond.
+The amount of Luna a validator bonds to themselves. Also referred to as self-bonding.
 
 ## Slashing
 
@@ -144,7 +144,7 @@ The amount of [Luna](#luna) bonded to a validator.
 
 ## Staking
 
-When a user delegates or bonds their Luna to an active validator to receive rewards. Bonded Luna adds to a validator's stake. Validators provide their stakes as collateral to participate in the consensus process. Validators with larger stakes are chosen to participate more often. Validators receive staking rewards for their participation. A validator's stake can be slashed if the validator misbehaves. Validators never have ownership of a delegator's Luna, even when staking.
+When a user delegates or bonds their Luna to an active validator to receive rewards. Bonded Luna adds to a validator's stake. Validators provide their stakes as collateral to participate in the consensus process. Validators with larger stakes are chosen to participate more often. Validators receive staking rewards for their participation. A validator's stake can be slashed if the validator misbehaves. Validators never have ownership of a delegator's Luna, even when staked.
 
 For more information on staking, visit the [concepts page](protocol.md#staking).
 
@@ -164,7 +164,7 @@ The Terra protocol's blockchain network where all transactions take place.
 
 ## Terra Station
 
-Terra's native wallet and platform for swaps, governance, and staking. In Station, you can send, receive, and stake Terra coins. You can also participate in governance and vote on proposals.
+Terra's native wallet and platform for swaps, governance, and staking. In Station, you can send, receive, and stake Terra tokens. You can also participate in governance and vote on proposals.
 
 To learn how to install and get started using Terra Station, visit the [Terra Station tutorial](terra-station/download/README.md).
 
@@ -182,7 +182,7 @@ A validator's public address beginning with `terravaloper` followed by a string 
 
 ## Testnet
 
-A version of the mainnet just for testing. The testnet does not use real coins. You can use the testnet to get familiar with transactions. The current testnet for Terra is [`pisco-1`](../develop/endpoints.md)
+A copy of the mainnet network used for testing. The testnet does not use real tokens. You can use the testnet to get familiar with carrying out transactions on Terra. The current testnet for Terra is [`pisco-1`](../develop/endpoints.md).
 
 ## The Terra ecosystem
 
@@ -190,23 +190,19 @@ A quickly expanding network of decentralized applications built on the Terra pro
 
 ## Tombstone
 
-To block a validator from participating in consensus or oracle voting. Tombstoned validators cannot rejoin the active set.
+A tombstoned validator is blocked from participating in consensus or oracle voting and cannot rejoin the active set.
 
 ## Total stake
 
 The total amount of Luna bonded to a delegator, including self-bonded Luna.
 
-## Unbonded validator
-
-A validator that is not in the active set and does not participate in consensus or receive rewards. Some unbonded validators may be jailed.
-
-## Unbonding validator
-
-A validator transitioning from the active set to the inactive set. An unbonding validator does not participate in consensus or earn rewards. The unbonding process takes 21 days.
-
 ## Unbonded Luna
 
 Luna that can be freely traded and is not staked to a validator.
+
+## Unbonded validator
+
+A validator that is not in the active set and does not participate in consensus or receive rewards. Some unbonded validators may be jailed.
 
 ## Unbonding
 
@@ -216,13 +212,17 @@ When a delegator decides to undelegate their Luna from a validator. This process
 
 [Luna](#luna) that is transitioning from bonded to unbonded. Luna that is unbonding cannot be traded freely. The unbonding process takes 21 days. No rewards accrue during this period. This action cannot be stopped once executed.
 
+## Unbonding validator
+
+A validator transitioning from the active set to the inactive set. An unbonding validator does not participate in consensus or earn rewards. The unbonding process takes 21 days.
+
 ## Undelegate
 
 When a [delegator](#delegator) no longer wants to have their Luna bonded to a validator. This process takes 21 days. No rewards accrue during this period. This action cannot be stopped once executed.
 
 ## Uptime
 
-The amount of time a [validator](#validator) is active in a given timeframe. Validators with low up time may be [slashed](#slashing).
+The amount of time a [validator](#validator) is active in a given timeframe. Validators with low uptime may be [slashed](#slashing).
 
 ## Validator
 
